@@ -8,39 +8,21 @@ namespace SimpleWebScraper
 {
     class Person
     {
-        string _ssn = "SSN";
-        string _passportData = "DATA";
-        string _driversLicenseNumber = "More DATA";
-        string _firstName = "Avetis";
-        string _lastName = "Ghuk";
-
-        public bool HasProperDocuments
+        public Person(string FirstName, string LastName, int age, int EyeColor, int HairColor)
         {
-            get
-            {
-                return _ssn.Length > 0 && _passportData.Length > 0 && _driversLicenseNumber.Length > 0;
-            }
+            this.FirstName = FirstName;
+            this.LastName = LastName;
+            this.Age = age;
+            this.EyeColor = EyeColor;
+            this.HairColor = HairColor;
         }
 
-       
-        public string FirstName
-        {
-            get
-            {
-                return _firstName;
-            }
-            set
-            {
-                if (value.Length < 1)
-                {
-                    Console.WriteLine("Input is not accepted");
-                    return;
-                }
-                _firstName = value;
-            }
-        }
-
-
+        public string FirstName { get; set; }
         public string LastName { get; set; }
+        public int Age { get; set; }
+        public int EyeColor { get; set; }
+        public int HairColor { get; set; }
+
+
     }
 }
