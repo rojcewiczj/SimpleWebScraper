@@ -43,6 +43,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Builders\ScrapeCriteriaPartBuilder.cs" />
+    <Compile Include="Builders\ScrapeCriteriaBuilder.cs" />
+    <Compile Include="Experimental.cs" />
+    <Compile Include="Data\ScrapeCriteriaPart.cs" />
+    <Compile Include="Data\ScrapeCriteria.cs" />
+    <Compile Include="SimpleCalculator.cs" />
     <Compile Include="PersonBuilder.cs" />
     <Compile Include="Person.cs" />
     <Compile Include="Program.cs" />
@@ -51,5 +57,6 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

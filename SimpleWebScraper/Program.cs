@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Net;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 
 namespace SimpleWebScraper
@@ -11,8 +12,14 @@ namespace SimpleWebScraper
     {
         static void Main(string[] args)
         {
-            Person person = new PersonBuilder().Build();
-            Person person1 = new PersonBuilder().WithAge(35).Build();
+
+            List<int> list;
+
+            for (int i = 0; i < 5; i++)
+            {
+                list.Add(i);
+            }
+
 
 
         }
